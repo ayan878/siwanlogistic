@@ -1,3 +1,4 @@
+
 :root {
   --color-primary: #6741d9;
   --color-primary-light: #7950f2;
@@ -26,19 +27,121 @@ body {
 
   color: var(--color-text);
   background-color: var(--color-background-900);
-  padding: 2.4rem;
+
 }
 
 /* ******* */
-
+/* address-bar */
+.addressBar {
+  height: 7.2rem;
+  width: 1200px;
+  padding: 0 3.2rem;
+  background-color: var(--color-background-900);
+  text-align: start;
+  color: var(--color-text-dark);
+}
+.addressBar h1 {
+  /* text-align: center; */
+  /* font-size: 3rem; */
+  color: var(--color-red);
+  font-family: College Stencil;
+}
+/* ************************************ */
 .nav-bar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 7.2rem;
+  width: 1200;
   padding: 0 3.2rem;
-  background-color: var(--color-primary);
-  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px rgba(231, 219, 219, 0.3);
+  margin-bottom: 0.5rem;
+}
+.nav-bar-list {
+  margin-left: 12rem;
+}
+.nav-bar-list a {
+  justify-content: space-between;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-bar-list a:hover {
+  color: var(--color-primary);
+}
+/* ***************************** */
+/* ImageSlider.css */
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: vh; /* Adjust as needed */
+  margin: auto;
+}
+
+.slide-container {
+  position: relative;
+}
+
+.image-slider img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+}
+
+.quote-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.quote-overlay p {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.image-slider:hover .quote-overlay {
+  opacity: 1;
+}
+
+.image-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-slider button:hover {
+  background-color: #555;
+}
+
+.image-slider button:first-child {
+  left: 10px;
+}
+
+.image-slider button:last-child {
+  right: 10px;
 }
 
 .main {
@@ -80,14 +183,15 @@ body {
   gap: 0.8rem;
 }
 
-.logo span {
-  font-size: 3.2rem;
+.logo img {
+  width: 6rem;
+  height: 4rem;
 }
 
 .logo h1 {
   font-size: 2.4rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-text-dark);
 }
 
 .search {

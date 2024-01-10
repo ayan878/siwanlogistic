@@ -1,6 +1,8 @@
 import { Logo } from "./Logo";
 import { Navbar } from "./Navbar";
 import ImageSlider from "./ImageSlider";
+import { AddressBar } from "./AddressBar";
+
 function App() {
   const slides = [
     {
@@ -28,6 +30,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <AddressBar/>
       <Logo />
       <Navbar />
       <ImageSlider slides={slides} />

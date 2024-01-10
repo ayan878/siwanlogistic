@@ -1,4 +1,3 @@
-
 // export function Header() {
 //   return (
 //     <header className="header">
@@ -10,12 +9,17 @@
 export function Logo() {
   return (
     <div className="logo nav-bar">
-      <span role="img">🍿</span>
-      <h1>usePopcorn</h1>
-      <div className="nav-bar">
+      {/* <span role="img">🍿</span> */}
+      <img src="Logo.jpg" />
+
+      <h1>siwanLogistics</h1>
+      <div className="nav-bar-list">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#">All Services</a>
+        <a href="#">City Network</a>
+        <a href="#">Our Gallery</a>
+        <a href="#">Our Blog</a>
+        <a href="#">About Us</a>
         <a href="#">Contact</a>
       </div>
     </div>
