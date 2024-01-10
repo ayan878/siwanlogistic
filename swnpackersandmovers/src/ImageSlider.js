@@ -1,6 +1,5 @@
-
+import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import React, { useState } from "react";
-// import "./ImageSlider.css"; // Make sure to create this CSS file
 
 const ImageSlider = ({ slides }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -19,17 +18,24 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div className="image-slider">
-      <button onClick={prevSlide}>Previous</button>
       <div className="slide-container">
         <img
           src={slides[currentSlideIndex].imageUrl}
           alt={`Slide ${currentSlideIndex + 1}`}
-        />
+        />{" "}
         <div className="quote-overlay">
           <p>{slides[currentSlideIndex].quote}</p>
         </div>
+        <div className="experience">
+          <p>{slides[currentSlideIndex].experience}</p>
+        </div>
       </div>
-      <button onClick={nextSlide}>Next</button>
+      <button onClick={prevSlide}>
+        <FaLessThan />
+      </button>
+      <button onClick={nextSlide}>
+        <FaGreaterThan />
+      </button>
     </div>
   );
 };

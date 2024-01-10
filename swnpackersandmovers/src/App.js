@@ -9,21 +9,21 @@ function App() {
       imageUrl:
         "https://shtheme.org/demosd/logistek/wp-content/uploads/2021/04/1.jpg",
       quote: "Enjoy! Hassel Free Delivery Services",
-      exprience:
+      experience:
         "We have almost 35+ year of experience for providing consulting services soltions",
     },
     {
       imageUrl:
         "https://shtheme.org/demosd/logistek/wp-content/uploads/2021/04/2.jpg",
       quote: "Enjoy! Hassel Free Delivery Services",
-      exprience:
+      experience:
         "We have almost 35+ year of experience for providing consulting services soltions",
     },
     {
       imageUrl:
         "https://shtheme.org/demosd/logistek/wp-content/uploads/2021/04/3.jpg",
       quote: "Enjoy! Hassel Free Delivery Services",
-      exprience:
+      experience:
         "We have almost 35+ year of experience for providing consulting services soltions",
     },
     // Add more slides with image URLs and quotes
