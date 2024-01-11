@@ -2,6 +2,7 @@ import { Logo } from "./Logo";
 import { Navbar } from "./Navbar";
 import ImageSlider from "./ImageSlider";
 import { AddressBar } from "./AddressBar";
+import Features from "./Features";
 
 function App() {
   const slides = [
@@ -28,12 +29,14 @@ function App() {
     },
     // Add more slides with image URLs and quotes
   ];
+  
   return (
     <div className="App">
-      <AddressBar/>
+      <AddressBar />
       <Logo />
       <Navbar />
       <ImageSlider slides={slides} />
+      <Features />
     </div>
   );
 }

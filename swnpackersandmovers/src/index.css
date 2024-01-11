@@ -118,12 +118,8 @@ body {
 .image-slider img {
   width: 100%;
   height: auto;
-  /* border: 1px solid #ddd; */
-  /* border-radius: 8px; */
 }
-image-slider:hover img {
-  transform: translateY(-4rem);
-}
+
 .quote-overlay {
   position: absolute;
   top: 0;
@@ -144,11 +140,14 @@ image-slider:hover img {
   font-size: 18px;
   font-style: italic; */
   /* font-family: "Rajdhani", sans-serif;  */
-  font-size: 8rem;
+  font-size: 10rem;
 }
-.quote-overlay,
+
 .experience {
-  font-size: 4rem;
+  margin-top: -24rem;
+  font-size: 3rem;
+  font-style: italic;
+  background: none;
 }
 .image-slider:hover .quote-overlay {
   opacity: 1;
@@ -177,7 +176,44 @@ image-slider:hover img {
 .image-slider button:last-child {
   right: 10px;
 }
+/* ************************************* */
+.features-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
 
+.feature-item {
+  width: 320px;
+  margin: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+  width: 40%;
+  height: auto;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 8px;
+}
+
+.feature-item h3 {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  font-size: 2rem;
+  color: #666;
+  text-align: justify;
+  padding: 1rem;
+}
+
+/* ************************************* */
 .main {
   margin-top: 2.4rem;
   height: calc(100vh - 7.2rem - 3 * 2.4rem);
